@@ -26,9 +26,10 @@ Valores de entrada:
 * `n1`: 13
 
 Valor de saída
-*`resultado`: 4
+* `resultado`: 4
 
 Afirmativas:
+
 () O algoritmo de Euclides é utilizado para calcular o **inverso modular** de um número.
 
 () Se mdc(`G`, `Zn`) ≠ 1, o programa ainda consegue encontrar o inverso de `G` em `Zn`.
