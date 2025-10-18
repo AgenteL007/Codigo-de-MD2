@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 int D; // Total de Divisores do Número
 int S; // Soma de Todos os Divisores do Número
@@ -242,8 +243,18 @@ int main()
         scanf ("%d", &N);
         printf ("\n");
 
-        if (N < 1 || N > 105)
-            printf ("Erro! O Numero deve estar entre 1 e 105!\n");
+        if (!isdigit(N) && (!(N >= 1) && !(N <= 105)))
+        {
+            printf ("Erro! Digite um Numero entre 1 e 105!\n\n");
+            getchar();
+        }
+        else if (N < 1 || N > 105)
+        {
+            getchar();
+            printf ("Erro! O Numero deve estar entre 1 e 105!\n\n");
+            getchar();
+        }
+        
     } while (N < 1 || N > 105);
 
     decomporFatoresPrimos(N);
