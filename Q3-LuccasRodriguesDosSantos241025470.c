@@ -111,17 +111,23 @@ void decomporFatoresPrimos(int N) // Função para Decompor um Número em Fatore
                     printf (" x [%d]", N);
                 }
                 
-                printf ("\n\n");
+                printf ("\n");
 
             }
             else
             {
                 printf ("%d NAO divide %d\n", Fator, N);
                 printf ("Ir para o Proximo Fator.\n\n");
+                Fator++;
             }
-            
+        }    
+        else
+        {
+            printf ("%d NAO EH Primo\n", Fator);
+            printf ("Ir para o Proximo Fator.\n\n");
             Fator++;
         }
+
         if (N > 1 && ehPrimo(N)) // Se o Número Restante for Primo, já pode encerrar a Decomposição
         {
             printf ("Numero Restante %d eh Primo\n", N);
@@ -139,17 +145,12 @@ void decomporFatoresPrimos(int N) // Função para Decompor um Número em Fatore
             {
                 printf ("Fatores Primos Finais: ... x %d\n", N);
             }
-
+            
             N = 1;
-        }
-        else
-        {
-            printf ("%d NAO EH Primo\n", Fator);
-            printf ("Ir para o Proximo Fator.\n\n");
         }
     }
 
-    printf ("Numero Decomposto: ");
+    printf ("\nNumero Decomposto: ");
     printf ("%d = ", N2);
 
     N = N2;
