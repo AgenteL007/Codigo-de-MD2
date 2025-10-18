@@ -4,11 +4,11 @@
 
 **Matrícula:** 241025470
 
-## Questão 1
+## Implementação
 
-## Questão 2
+**gcc** -Wall -o nome arquivo.c
 
-## Questão 3
+**.\nome.exe**
 
 ## Questão 4
 
