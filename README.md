@@ -18,14 +18,15 @@
 
 ## Questão 4
 
-Saída com os valores:
+Valores de entrada:
 * `H`: 7
 * `G`: 3
 * `Zn`: 11
 * `x`: 10
 * `n1`: 13
 
-**`resultado`:** 4
+Valor de saída
+*`resultado`: 4
 
 Afirmativas:
 () O algoritmo de Euclides é utilizado para calcular o **inverso modular** de um número.
@@ -39,4 +40,5 @@ Afirmativas:
 () A função `powMod` implementa o cálculo de potência modular utilizando multiplicações diretas sem otimização.
 
 () Quando o resultado do inverso é negativo, o código ajusta o valor somando o módulo `m0`.
+
 () O cálculo de fi(`n1`) (função totiente de Euler) é utilizado apenas quando `n1` **não é primo**.
